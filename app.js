@@ -439,7 +439,9 @@ function toggleFav(event, url) {
 
 function playChannel(url, name) {
     saveState();
-    const playerUrl = `player.html?url=${encodeURIComponent(url)}&name=${encodeURIComponent(name)}`;
+    // Detect slow network if possible
+    const isSlow = (navigator.connection && (navigator.connection.effectiveType === '2g' || navigator.connection.effectiveType === 'slow-2g')) ? '1' : '0';
+    const playerUrl = `player.html?url=${encodeURIComponent(url)}&name=${encodeURIComponent(name)}&slownet=${isSlow}`;
     window.location.href = playerUrl;
 }
 

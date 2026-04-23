@@ -1,5 +1,6 @@
-// IPTV PRO V51 - Ultra Pro Player with YouTube & M3U8 Support
-// Optimized for Smart TV, Mobile & PC with Advanced Proxy & Buffering
+// IPTV PRO V52 - Ultimate Player with Advanced Proxy & Mixed Content Handler
+// Optimized for GitHub Pages HTTPS + HTTP Stream Compatibility
+// Supports: HLS.js, Native HLS, Clappr, Shaka, YouTube, Direct Streams
 
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
@@ -23,17 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    console.log("Pro Player V51: Loading stream:", streamUrl.substring(0, 50) + "...");
+    console.log("Pro Player V52: Loading stream:", streamUrl.substring(0, 50) + "...");
+    console.log("Slow Network Mode:", isSlowNetwork);
 
-    // Enhanced Proxy List for CORS & Mixed Content - Optimized for GitHub/Netlify
+    // Advanced Proxy List - Optimized for GitHub Pages HTTPS
+    // Order matters: Best performers for mixed content first
     const proxies = [
-        "", // Direct (no proxy)
-        "https://api.allorigins.win/raw?url=",
-        "https://corsproxy.io/?url=",
-        "https://api.codetabs.com/v1/proxy?quest=",
-        "https://thingproxy.freeboard.io/fetch/",
-        "https://proxy.cors.sh/",
-        "https://cors-anywhere.herokuapp.com/"
+        "", // Direct (no proxy) - Only for HTTPS streams
+        "https://corsproxy.io/?url=",  // Best for binary streams (.ts files)
+        "https://api.allorigins.win/raw?url=",  // Good for JSON/M3U8
+        "https://api.codetabs.com/v1/proxy?quest=",  // Reliable fallback
+        "https://thingproxy.freeboard.io/fetch/",  // Another option
+        "https://proxy.cors.sh/",  // Last resort
+        "https://cors-anywhere.herokuapp.com/"  // Emergency fallback
     ];
 
     let currentProxyIndex = 0;
@@ -42,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const engines = ['hls', 'native', 'clappr', 'dash', 'fallback'];
     const maxFailures = proxies.length * engines.length;
 
-    // Pro-level configuration optimized for slow networks
+    // Pro-level configuration optimized for slow networks and GitHub Pages
     const proConfig = {
         hlsConfig: {
             enableWorker: true,
@@ -100,9 +103,39 @@ document.addEventListener('DOMContentLoaded', () => {
         hideLoading();
     }
 
+    function getMixedContentStrategy(url) {
+        const isPageHttps = window.location.protocol === 'https:';
+        const isStreamHttp = url.startsWith('http:');
+        const isStreamHttps = url.startsWith('https:');
+        
+        if (isPageHttps && isStreamHttp) {
+            // HTTPS page + HTTP stream = MUST use proxy
+            return {
+                needsProxy: true,
+                reason: "Mixed Content (HTTPS page, HTTP stream)",
+                startProxy: url.includes('.ts') ? 1 : 1  // corsproxy for .ts, allorigins for others
+            };
+        } else if (isPageHttps && isStreamHttps) {
+            // HTTPS page + HTTPS stream = Try direct first
+            return {
+                needsProxy: false,
+                reason: "Secure connection (HTTPS page, HTTPS stream)",
+                startProxy: 0
+            };
+        } else {
+            // HTTP page or any other case
+            return {
+                needsProxy: false,
+                reason: "HTTP page or direct stream",
+                startProxy: 0
+            };
+        }
+    }
+
     function tryNextEngine(url) {
         playerWrapper.innerHTML = "";
         
+        // Check for YouTube
         if (isYouTubeUrl(url)) {
             const videoId = extractYouTubeVideoId(url);
             if (videoId) {
@@ -111,32 +144,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         
-        const isPageHttps = window.location.protocol === 'https:';
-        const isStreamHttp = url.startsWith('http:');
+        // Determine proxy strategy
+        const strategy = getMixedContentStrategy(url);
         
         let finalUrl = url;
         
-        // Mixed Content Check: If page is HTTPS and stream is HTTP, we MUST use a proxy
-        if (isPageHttps && isStreamHttp && currentProxyIndex === 0) {
-            console.warn("Mixed content detected (HTTPS page, HTTP stream). Forcing proxy for compatibility...");
-            // If it's a .ts file, try a specific proxy first that handles binary well
-            if (url.includes('.ts')) {
-                currentProxyIndex = 2; // corsproxy.io often works better for binary
-            } else {
-                currentProxyIndex = 1; // Default to allorigins
-            }
+        // Apply proxy if needed and not already applied
+        if (strategy.needsProxy && currentProxyIndex === 0) {
+            console.warn(`Mixed content detected: ${strategy.reason}. Forcing proxy...`);
+            currentProxyIndex = strategy.startProxy;
         }
         
         if (currentProxyIndex > 0) {
             finalUrl = proxies[currentProxyIndex] + encodeURIComponent(url);
+            console.log(`Using Proxy ${currentProxyIndex}: ${proxies[currentProxyIndex].substring(0, 30)}...`);
         }
 
         const currentEngine = engines[engineIndex];
         console.log(`Attempt ${failureCount + 1}/${maxFailures}: Engine=${currentEngine}, Proxy=${currentProxyIndex}, URL=${url.substring(0, 40)}...`);
 
-        // .ts files are usually MPEG-TS and can be played via HLS.js or as a direct stream
+        // Determine stream type
         const isM3U8 = url.includes('.m3u8');
         const isTS = url.includes('.ts');
+        const isMPD = url.includes('.mpd');
         const isHlsSource = currentEngine === 'hls' || isM3U8 || isTS;
 
         if (isHlsSource) {
@@ -147,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 tryNativeVideo(finalUrl);
             }
-        } else if (currentEngine === 'dash' || url.includes('.mpd')) {
+        } else if (currentEngine === 'dash' || isMPD) {
             tryShaka(finalUrl);
         } else {
             tryNativeVideo(finalUrl);
@@ -157,10 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function tryHlsJs(url, isTS = false) {
         playerWrapper.innerHTML = '<video id="video-player" class="pro-video" controls autoplay playsinline crossorigin="anonymous"></video>';
         const video = document.getElementById('video-player');
-        
-        // If it's a direct .ts file, we might need to wrap it or use a different approach
-        // However, HLS.js is primarily for manifests. For direct .ts, native might sometimes work better
-        // but HLS.js can also handle fragmented MP4/TS if configured.
         
         const hls = new Hls(proConfig.hlsConfig);
         
@@ -174,9 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         hls.on(Hls.Events.ERROR, (event, data) => {
-            console.error("HLS Error:", data.type, data.details, data);
+            console.error("HLS Error:", data.type, data.details);
             
-            // If HLS fails on a .ts file, immediately try native video as fallback
             if (data.fatal) {
                 hls.destroy();
                 if (isTS) {
@@ -190,7 +215,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function tryNativeVideo(url) {
-        // For .ts files, some browsers need video/mp2t type
         const isTS = url.includes('.ts');
         const typeStr = isTS ? 'type="video/mp2t"' : 'type="application/x-mpegURL"';
         
@@ -266,24 +290,24 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (failureCount >= maxFailures) {
             console.error("All playback engines and proxies failed for URL:", streamUrl);
-            showError("Stream unavailable. This might be due to a broken link or strict security on GitHub/Netlify. Try another channel.");
+            showError("Stream unavailable. This might be due to a broken link, geo-blocking, or stream being offline. Try another channel or check your internet connection.");
             return;
         }
         
-        // Faster Strategy for GitHub/Netlify: Try next proxy immediately
+        // Strategy: Try all proxies first, then move to next engine
         if (currentProxyIndex < proxies.length - 1) {
             currentProxyIndex++;
-            console.log(`Switching to proxy ${currentProxyIndex}...`);
-            setTimeout(() => tryNextEngine(streamUrl), 200); // Faster retry
+            console.log(`Switching to proxy ${currentProxyIndex}/${proxies.length - 1}...`);
+            setTimeout(() => tryNextEngine(streamUrl), 200);
         } 
         else if (engineIndex < engines.length - 1) {
             engineIndex++;
             currentProxyIndex = 0;
-            console.log(`Switching to engine ${engineIndex}...`);
-            setTimeout(() => tryNextEngine(streamUrl), 200); // Faster retry
+            console.log(`Switching to engine ${engineIndex}/${engines.length - 1}...`);
+            setTimeout(() => tryNextEngine(streamUrl), 200);
         } 
         else {
-            showError("All playback methods exhausted. Stream is not accessible.");
+            showError("All playback methods exhausted. Stream is not accessible from your location or device.");
         }
     }
 
@@ -300,5 +324,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Start playback process
     tryNextEngine(streamUrl);
 });

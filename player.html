@@ -183,6 +183,14 @@
         </button>
     </div>
 
+    <script>
+        // Pre-register proxy SW before player loads
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw-proxy.js').catch(err => {
+                console.log('Proxy SW pre-registration attempt:', err);
+            });
+        }
+    </script>
     <script src="player.js?v=45"></script>
     <script>
         function goBackToCategory() {

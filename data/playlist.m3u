@@ -1610,104 +1610,105 @@ https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8
 https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8
 
 # ===== Bangladesh =====
-#EXTINF:-1 tvg-id="AnandaTV.bd@SD" tvg-logo="https://i.imgur.com/jkbo7Qe.png" group-title="Bangladesh",Ananda TV (480p)
-http://103.99.249.139/anandatv/index.m3u8
-#EXTINF:-1 group-title="Bangladesh",SKY LIFE BD AL QURAN
-https://live.kwikmotion.com/sbrksaquranradiolive/srpksaquranradio/playlist.m3u8
-#EXTINF:-1 group-title="Bangladesh",AZAN TV
-https://dbcanada.sonarbanglatv.com/azantv/atv/index.m3u8
-#EXTINF:-1 group-title="Bangladesh",AL QURAN LIVE
-https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://s3.aynaott.com/storage/35088d7015b1509b2c9cbc94503d5a6e",Quran
-http://m.live.net.sa:1935/live/quran/playlist.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://s3.aynaott.com/storage/965c0999ab09ebcf1c9f5803c8309460",SUNNAH
-http://m.live.net.sa:1935/live/sunnah/chunklist.m3u8?v=1
-#EXTINF:-1 group-title="Bangladesh",#https://mflixott.com/tv/plusbox/live/BTVWorld/index.m3u8
-https://tv.ottking.top/webottking/linkchor/101.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/BTV_News_Logo.png/250px-BTV_News_Logo.png",বিটিভি নিউজ
-https://www.btvlive.gov.bd/live/37f2df30-3edf-42f3-a2ee-6185002c841c/BD/d96eb7f4-83c2-4472-9597-3568390a8ebf/index.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://raw.githubusercontent.com/Shakil1294/pcv/main/logo/sangsad_tv.png",সংসদ বাংলাদেশ
-https://www.btvlive.gov.bd/live/37f2df30-3edf-42f3-a2ee-6185002c841c/BD/9ee3b4f9-fd0a-47c5-a135-2575c5691613/index.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/1/10/MyTV_HD_logo_2020.png",মাই টিভি
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/398.ts
-#EXTINF:-1 ,group-title="Bangladesh",RAJDHANI TV
-https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8
-#EXTINF:-1 group-title="Bangladesh",#http://103.175.242.10:8080/banglavision/index.m3u8
-https://mflixott.com/tv/plusbox/live/BanglaVision/index.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://s3.aynaott.com/storage/fd634ca672c8294f109225ca42d20991",RTV
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/401.ts
-#EXTINF:-1 group-title="Bangladesh",#http://stvlive.net:8080/atnbangla/index.m3u8
-http://103.161.153.165:8000/play/atnbd/index.m3u8
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/431.ts
-#EXTINF:-1 group-title="Bangladesh",#http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/1036.ts
-http://103.175.242.10:8080/atnbangla/index.m3u8
-#EXTINF:-1 group-title="Bangladesh"" tvg-logo="https://s3.aynaott.com/storage/28931315743beff50fc2c1312b1f8261",Channel I
-https://tv.ottking.top/webottking/linkchor/120.m3u8
-#EXTINF:-1 group-title="Bangladesh",#http://tvn1.chowdhury-shaheb.com/ntv/index.m3u8
-http://103.175.242.10:8080/ntv/index.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://s3.aynaott.com/storage/12462ef0383fa0e927215d56cd51acf8",Deepto TV
-http://103.175.242.10:8080/deepto/index.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://s3.aynaott.com/storage/d805cf57543080b49de8a2621cd54da4",ETV
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/3813.ts
-#EXTINF:-1 group-title="Bangladesh",#http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/422.ts
-https://livecdn-bostahls.global.ssl.fastly.net/rongo/rongo-somoy/index.m3u8
-#EXTINF:-1 group-title="Bangladesh"" tvg-logo="https://s3.aynaott.com/storage/9ef657aca7c0009e4f0675af3b5190d8",Desh TV
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/394.ts
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://s3.aynaott.com/storage/affd223f023a705e3a1c5df263d0a7ef",Channel 9
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/434.ts
-#EXTINF:-1 group-title="Bangladesh",#https://mflixott.com/tv/plusbox/live/Channel24/index.m3u8
-https://tv.ottking.top/webottking/linkchor/55.m3u8
-#EXTINF:-1 group-title="Bangladesh",#https://mtlivestream.com/hls/asian/ytlive/index.m3u8
-https://tv.ottking.top/webottking/linkchor/44.m3u8
-#EXTINF:-1 group-title="Bangladesh",#https://mflixott.com/tv/plusbox/live/ATNNews/index.m3u8
-https://tv.ottking.top/webottking/linkchor/100.m3u8
-#EXTINF:-1 group-title="Bangladesh",#http://103.175.242.10:8080/independent/index.m3u8
-https://tv.ottking.top/webottking/linkchor/49.m3u8
-#EXTINF:-1 group-title="Bangladesh",#http://116.204.149.16/satv/index.m3u8
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/3814.ts
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://s3.aynaott.com/storage/b102f206ea73dfdbc591e9cf6c8c478d",News 24 BD
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/3810.ts
-#EXTINF:-1 group-title="Bangladesh",#https://roarzone.geoclaster.xyz/main/stream.php?id=ZWRnZTMvYmlqb3ktdHY%3D&name=bijoy-tv&format=.m3u8
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/408.ts
-#EXTINF:-1 group-title="Bangladesh",#https://sm-monirul.top/Toffee/live.php?id=a08da2fa07b5&e=.m3u8
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/399.ts
-#EXTINF:-1 ggroup-title="Bangladesh" tvg-logo="https://github.com/sonamul4545/Channel_logo-s/blob/main/Boisakhi.jpg?raw=true",Boishakhi tv
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/390.ts
-#EXTINF:-1 group-title="Bangladesh",#http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/421.ts
-https://tv.ottking.top/webottking/linkchor/42.m3u8
-#EXTINF:-1 group-title="Bangladesh",#http://sm-monirul.top/AyNa/play.php?id=6662e038-604e-4cdc-87f7-8ec1cdf77a5e&e=.m3u8
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/397.ts
-#EXTINF:-1 group-title="Bangladesh",#http://103.229.254.25:7001/play/a05m/index.m3u8
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/411.ts
-#EXTINF:-1 group-title="News" tvg-logo="https://akashgo-mediaready.videoready.tv/akashgo/image/fetch/f_auto,fl_lossy,q_auto,w_180,h_180/https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189845719.png",Star News
-http://103.161.153.165:8000/play/a033/index.m3u8
-http://Rochdi@starshare.net:80/live/Suryaaa/SURYAAAA/3802.ts
-#EXTINF:-1 group-title="Bangladesh",NEWS 21 TV
-http://103.190.133.68:1935/news21live/live/playlist.m3u8
-#EXTINF:-1 group-title="Bangladesh",DESHI TV
+#EXTINF:-1 group-title="Bangladesh",Channel 1 News HD 🇧🇩
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel1bd.stream/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Bangladesh",Discovery Bangla
+http://202.70.146.135:8000/play/a05z/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Somoy TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Jamuna TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",DBC News HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Independent TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Ekattor HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Channel 24 HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",News 24 HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",ATN News
+https://owrcovcrpy.gpcdn.net/bpk-tv/17#EXTINF:-1 ,BTV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Deepto TV HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",SATV HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1720/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Channel 9 HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Ekhon TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",SRK TV
+https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8
+#EXTINF:-1 group-title="Bangladesh",Channel I HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u806/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",ATN Bangla
+https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Bangla Vision
+https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",NTV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Deepto TV
+https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Atn Bangla
+https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722-audio_113522_eng=113200-video=1692000.m3u8
+#EXTINF:-1 group-title="Bangladesh",Ekushey TV
+https://ekusheyserver.com/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
+#EXTINF:-1 group-title="Bangladesh",Ntv
+https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/1716-audio_113462_eng=113200-video=1692000.m3u8
+#EXTINF:-1 group-title="Bangladesh",Jamuna Tv
+https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/1701-audio_113312_eng=113200-video=1692000.m3u8
+#EXTINF:-1 group-title="Bangladesh",Enter10 Bangla
+https://amg01448-samsungin-enterr10bangla-samsungin-ad-gg.amagi.tv/playlist/amg01448-samsungin-enterr10bangla-samsungin/playlist.m3u8
+#EXTINF:-1 group-title="Bangladesh",News18 Bangla
+https://amg01448-samsungin-news18bangla-samsungin-ad-qy.amagi.tv/playlist/amg01448-samsungin-news18bangla-samsungin/playlist.m3u8
+#EXTINF:-1 group-title="Bangladesh",Deshi TV HD
 https://deshitv.deshitv24.net/live/myStream/playlist.m3u8
-#EXTINF:-1 group-title="Bangladesh",NRB TV
-https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8
-#EXTINF:-1 group-title="Bangladesh",JAGO NEWS 24
-https://app.ncare.live/live-orgin/jagonews24.stream/playlist.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://github.com/sonamul4545/Channel_logo-s/blob/main/Movie%20Bangla.jpg?raw=true",Movie Bang
-http://alvetv.com/moviebanglatv/8080/index.m3u8
-#EXTINF:-1 group-title="Bangladesh",NAN TV
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/nantv.stream/playlist.m3u8
-#EXTINF:-1 group-title="Bangladesh",PROBASHI TV
-http://158.69.24.53:8080/probashi_tv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://github.com/sonamul4545/Channel_logo-s/blob/main/Jangle%20Book.jpg?raw=true",Jungle Book
-https://cc-4bhi5osabejc9.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4bhi5osabejc9/junglebook.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://github.com/sonamul4545/Channel_logo-s/blob/main/Zoo%20music.jpg?raw=true",Zoo Music
-https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8
-#EXTINF:-1 group-title="All-In-One~ENT🧩" tvg-logo="https://github.com/sonamul4545/Channel_logo-s/blob/main/Bangla+%20plus.jpg?raw=true",Bangla+ plus
-https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://github.com/sonamul4545/Channel_logo-s/blob/main/EnterTen%20Bangla%202.jpg?raw=true",Enter10Bangla
+#EXTINF:-1 group-title="Bangladesh",ATN Bangla UK
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8
+#EXTINF:-1 group-title="Bangladesh",Deepto TV
+https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Enter 10 Bangla
 https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8
-#EXTINF:-1 group-title="Bangladesh"" tvg-logo="https://github.com/sonamul4545/Channel_logo-s/blob/main/Hindi%20Movie.jpg?raw=true",Hindi movies
-https://cloudfrontnet.vercel.app/tplay/playout/209612/master.m3u8
-#EXTINF:-1 group-title="Bangladesh" tvg-logo="https://github.com/sonamul4545/Channel_logo-s/blob/main/Bangla%20Movie.jpg?raw=true",Bangla Movies
-https://cloudfrontnet.vercel.app/tplay/playout/209627/master.m3u8
+#EXTINF:-1 group-title="Bangladesh",ABP Ananda
+https://amg01448-samsungin-abpananda-samsungin-ad-pw.amagi.tv/playlist/amg01448-samsungin-abpananda-samsungin/playlist.m3u8
+#EXTINF:-1 group-title="Bangladesh",Bangla Jago
+http://banglajagotv.livebox.co.in:80/banglajagohls/24x7.m3u8
+#EXTINF:-1 group-title="Bangladesh",DD Bangla
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
+#EXTINF:-1 group-title="Bangladesh",R Plus News
+https://thelegitpro.in/pntv/rplusnews24x7/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",Zee 24 Ghanta
+https://d2dsoyvkr33m05.cloudfront.net/index_1.m3u8
+#EXTINF:-1 group-title="Bangladesh",Maasranga TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
+#EXTINF:-1 group-title="Bangladesh",NTV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/1716.m3u8
+#EXTINF:-1 group-title="Bangladesh",NTV UK
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8
+#EXTINF:-1 group-title="Bangladesh",SATV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1720/output/1720.m3u8
+#EXTINF:-1 group-title="Bangladesh",Deepto TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/1711.m3u8
+#EXTINF:-1 group-title="Bangladesh",Channel 9
+https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/1729.m3u8
+#EXTINF:-1 group-title="Bangladesh",G-Serise
+https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Bangladesh",Amar Bangla
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/amarbanglatv.stream/playlist.m3u8
+#EXTINF:-1 group-title="Bangladesh",R Plus News
+https://thelegitpro.in/pntv/rplusnews24x7/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Bangladesh",Kolkata TV
+https://cdn.ottlive.co.in/kolkatatv/index.m3u8
+#EXTINF:-1 group-title="Bangladesh",TV9 Bangla
+https://amg01448-samsungin-tv9bangla-samsungin-9lgnh.amagi.tv/playlist/amg01448-samsungin-tv9bangla-samsungin/playlist.m3u8
+#EXTINF:-1 group-title="Bangladesh",Ekushey TV (480p)
+https://ekusheyserver.com/etvlivesn.m3u8
+#EXTINF:-1 group-title="Bangladesh",Rongeen TV
+https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Bangladesh",Green TV
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/chunks.m3u8
 # ===== India =====
 #EXTINF:-1 tvg-id="Andflix.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDFLIX/images/LOGO_HD/LOGO_HD_image.png" group-title="India",&flix HD (1080p)
 http://116.90.120.151:8000/play/a0il/index.m3u8
